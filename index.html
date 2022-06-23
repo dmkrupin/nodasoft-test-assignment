@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Описание проекта">
+    <title>Nodasoft Test task</title>
+    <link rel="stylesheet" href="css/style.min.css">
+
+    <!-- font preload -->
+    <link rel="preload" href="fonts/roboto.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto.woff" type="font/woff" as="font" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container ">
+      <header class="header">
+        <a class="header__button" href="#popup">Open pop-up button</a>
+      </header>
+      <main>
+        <div class="grid-1">
+          <div class="grid-1__wrapper">
+            <div class="grid-1__cell grid-1__cell--1"></div>
+            <div class="grid-1__cell grid-1__cell--2"></div>
+          </div>
+          <div class="grid-1__cell"></div>
+          <div class="grid-1__cell"></div>
+          <div class="grid-1__cell"></div>
+        </div>
+        <div class="grid-2">
+          <div class="grid-2__cell">
+            <div class="grid-2__block"></div>
+          </div>
+          <div class="grid-2__cell">
+            <div class="grid-2__block"></div>
+          </div>
+          <div class="grid-2__cell">
+            <div class="grid-2__block"></div>
+          </div>
+          <div class="grid-2__cell">
+            <div class="grid-2__block"></div>
+          </div>
+        </div>
+      </main>
+      <footer class="footer"></footer>
+    </div>
+
+    <!-- pop-up -->
+    <div id="popup" class="overlay">
+      <div class="popup">
+        <h2>Pop-up</h2>
+        <a class="popup__close" href="#">X</a>
+      </div>
+    </div>
+
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
