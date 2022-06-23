@@ -1,0 +1,29 @@
+.header {
+  min-height: 100px;
+  padding: 0 30px;
+  margin-bottom: 15px;
+  background-color: $color-jordy-blue;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header__button {
+  background-color: $color-pale-cornflower-blue;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+
+  font: 400 20px/120% $ff-roboto;
+  color: $color-default-white;
+  cursor: pointer;
+  transition: opacity $trans-default;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
+  }
+}

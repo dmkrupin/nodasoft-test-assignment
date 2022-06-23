@@ -1,0 +1,41 @@
+.popup {
+  position: relative;
+  top: 17.5%;
+  margin: 0 auto;
+  padding: 20px;
+  width: 400px;
+  height: 400px;
+  display: flex;
+
+  background-color: $color-default-white;
+
+  transition: all $trans-popup;
+}
+
+.popup h2 {
+  margin: auto;
+  padding: 0;
+  font: 400 53px/120% $ff-roboto;
+  color: $color-default-black;
+}
+
+.popup__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  padding: 7px 15px;
+  border-radius: 5px;
+  background-color: $color-jordy-blue;
+
+  font: 400 20px/120% $ff-roboto;
+  color: $color-default-white;
+
+  transition: all $trans-default;
+
+  @media (hover: hover), screen and (min-width: 0\0) {
+    &:hover,
+    &:focus {
+      background-color: $color-bondie-blue;
+    }
+  }
+}

@@ -13,6 +13,14 @@ $color-transparent:                 rgba(255, 255, 255, 0);
 $color-neon-blue:                   #2c39f2;
 $color-torch-red:                   #ff1553;
 
+$color-jordy-blue:                  #7FAFF6;
+$color-de-york:                     #8AD191;
+$color-conifer:                     #B3F95A;
+$color-zumthor:                     #C0DBD9;
+$color-glacier:                     #88B5BF;
+$color-bondie-blue:                 #0D89B0;
+$color-pale-cornflower-blue:        #A5C7F9;
+
 // Gradient
 
 $black-to-right:                    linear-gradient(90deg, rgba(0, 0, 0, 0.75) 0%, rgba(0, 0, 0, 0) 75%);
@@ -27,13 +35,14 @@ $fz-default:                        16px;
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
 $ff-rouble:                         "Rouble", "Arial", sans-serif;
 
-$ff-placeholder:                    "Placeholder", "Arial", sans-serif;
+$ff-roboto:                         "Roboto", "Arial", sans-serif;
 
 // Animation
 // ---------------------------------
 
 $tf-default:                        ease;
 $trans-default:                     0.3s $tf-default;
+$trans-popup:                       3s $tf-default;
 
 // если требуется изинг отличный от $tf-default, то переменную называем не цифрой
 $trans-modal:                       0.6s cubic-bezier(0.55, 0, 0.1, 1);

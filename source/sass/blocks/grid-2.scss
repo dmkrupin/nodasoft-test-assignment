@@ -1,0 +1,21 @@
+.grid-2 {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 30px;
+  background-color: $color-glacier;
+}
+
+.grid-2__cell {
+  position: relative;
+  padding-bottom: 78%;
+  background-color: $color-bondie-blue;
+}
+
+.grid-2__block {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}

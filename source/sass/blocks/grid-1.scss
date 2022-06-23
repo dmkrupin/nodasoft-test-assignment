@@ -1,0 +1,41 @@
+.grid-1 {
+  margin-bottom: 15px;
+  display: grid;
+  grid-template-columns: 1fr 160px;
+  gap: 15px;
+
+  background-color: $color-conifer;
+
+  counter-reset: grid-1;
+}
+
+.grid-1__wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+
+  .grid-1__cell--1 {
+    flex-grow: 39;
+  }
+  .grid-1__cell--2 {
+    flex-grow: 59;
+  }
+}
+
+.grid-1__cell {
+  position: relative;
+  min-width: 50px;
+  min-height: 198px;
+  background-color: $color-de-york;
+
+  &::before {
+    counter-increment: grid-1;
+    content: counter(grid-1);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font: 400 53px/120% $ff-roboto;
+    color: $color-default-white;
+  }
+}
